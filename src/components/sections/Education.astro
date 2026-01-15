@@ -1,9 +1,85 @@
 ---
+import Section from "@/components/Section.astro";
 
-import Section from "@/components/Section.astro"
-
+import { education } from "@cv";
 ---
 
 <Section title="Education">
-
+    <ul>
+        {
+            education.map(
+                ({
+                    institution,
+                    area,
+                    studyType,
+                    startDate,
+                    endDate,
+                    score
+                }) => {
+                    return (
+                        <li>
+                            <article>
+                                <header>
+                                    <h3>{institution}</h3>
+                                    <time>
+                                        {[
+                                            startDate,
+                                            " - ",
+                                            endDate != null
+                                                ? endDate
+                                                : "Present",
+                                        ]}
+                                    </time>
+                                </header>
+                                <footer>
+                                    <h4>
+                                        {area} - {studyType}
+                                    </h4>
+                                    <h4>{score}</h4>
+                                </footer>
+                            </article>
+                        </li>
+                    );
+                },
+            )
+        }
+    </ul>
 </Section>
+
+<style>
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    article h3 {
+        font-weight: 500;
+        color: #111;
+    }
+
+    article h4 {
+        color: #222;
+        font-weight: 400;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 4px;
+    }
+
+    time {
+        color: #555;
+        font-size: 0.85rem;
+    }
+
+    li {
+        color: #777;
+		font-size: .85rem;
+		line-height: 1.5;
+		margin: 0;
+		text-wrap: pretty;
+    }
+</style>

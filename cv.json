@@ -27,7 +27,6 @@
       }
     ]
   },
-
   "work": [
     {
       "name": "PricewaterhouseCoopers (PwC)",
@@ -55,9 +54,7 @@
       ]
     }
   ],
-
   "volunteer": [],
-
   "education": [
     {
       "institution": "Facultad de Estudios Superiores Aragón - UNAM",
@@ -66,7 +63,7 @@
       "studyType": "Bachelor",
       "startDate": "2021-08",
       "endDate": "2025-12",
-      "score": "",
+      "score": "9.40",
       "courses": [
         "Programming",
         "Data Structures",
@@ -77,13 +74,9 @@
       ]
     }
   ],
-
   "awards": [],
-
   "certificates": [],
-
   "publications": [],
-
   "skills": [
     {
       "name": "Python",
@@ -116,36 +109,35 @@
       ]
     },
     {
-        "name": "Git",
-        "level": "Foundational",
-        "keywords":[
-            "Version control",
-            "Github"
-        ]
+      "name": "Git",
+      "level": "Foundational",
+      "keywords": [
+        "Version control",
+        "Github"
+      ]
     },
     {
-        "name": "AWS",
-        "level": "Foundational",
-        "keywords": [
-            "Cloud Computing",
-            "EC2",
-            "S3",
-            "IAM"
-        ]
+      "name": "AWS",
+      "level": "Foundational",
+      "keywords": [
+        "Cloud Computing",
+        "EC2",
+        "S3",
+        "IAM"
+      ]
     },
     {
-        "name": "SQL",
-        "level": "Intermediate",
-        "keywords": [
-            "MariaDB",
-            "MySQL",
-            "Queries",
-            "Joins",
-            "Subqueries"
-        ]
+      "name": "SQL",
+      "level": "Intermediate",
+      "keywords": [
+        "MariaDB",
+        "MySQL",
+        "Queries",
+        "Joins",
+        "Subqueries"
+      ]
     }
   ],
-
   "languages": [
     {
       "language": "Spanish",
@@ -156,11 +148,8 @@
       "fluency": "B2"
     }
   ],
-
   "interests": [],
-
   "references": [],
-
   "projects": [
     {
       "name": "Schedule Generator",

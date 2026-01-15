@@ -34,7 +34,7 @@
       "position": "Intern",
       "url": "https://www.pwc.com",
       "startDate": "2025-08",
-      "endDate": "",
+      "endDate": null,
       "summary": "Internship focused on cloud-based enterprise systems and data analysis within Oracle Cloud environments.",
       "highlights": [
         "Worked with Oracle Cloud technologies including Fusion Cloud, Oracle Integration Cloud (OIC), and Oracle Cloud Infrastructure (OCI)",

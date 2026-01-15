@@ -14,7 +14,12 @@
 
 <style is:global>
 	html {
-		font-family: Menlo, Monaco, Lucida Console, 'Courier New', Courier;
+		font-family:
+			Menlo,
+			Monaco,
+			Lucida Console,
+			"Courier New",
+			Courier;
 		background: #fff;
 		letter-spacing: -0.025rem;
 	}
@@ -35,21 +40,52 @@
 		padding: 0;
 	}
 
-	*, *::before, *::after {
+	*,
+	*::before,
+	*::after {
 		box-sizing: border-box;
 	}
 
-	h1, h2, h3, h4 {
+	h1,
+	h2,
+	h3,
+	h4 {
 		margin: 0;
-		font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
+		font-family:
+			system-ui,
+			-apple-system,
+			BlinkMacSystemFont,
+			"Segoe UI",
+			Roboto,
+			Oxygen,
+			Ubuntu,
+			Cantarell,
+			"Open Sans",
+			"Helvetica Neue",
+			sans-serif;
 	}
 
 	p {
 		color: #777;
-		font-size: .85rem;
+		font-size: 0.85rem;
 		line-height: 1.5;
 		margin: 0;
 		text-wrap: pretty;
+	}
+
+	@media print {
+		.no-print {
+			display: none !important;
+		}
+	}
+
+	.print {
+		display: none !important;
+	}
+
+	@media print {
+		.print {
+			display: block !important;
+		}
 	}
 </style>

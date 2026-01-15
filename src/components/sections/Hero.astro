@@ -1,21 +1,24 @@
 ---
+import { basics } from "@cv";
+import Section from "@/components/Section.astro";
+import Mail from "@/components/icons/Mail.astro";
+import Phone from "@/components/icons/Phone.astro";
+import LinkedIn from "@/components/icons/LinkedIn.astro";
+import GitHub from "@/components/icons/GitHub.astro";
+import WorldMap from "@/components/icons/WorldMap.astro";
 
-import { basics } from '@cv'
-import Section from '@/components/Section.astro'
-import Mail from '@/components/icons/Mail.astro'
-import Phone from '@/components/icons/Phone.astro'
-import LinkedIn from '@/components/icons/LinkedIn.astro'
-import GitHub from '@/components/icons/GitHub.astro'
-import WorldMap from '@/components/icons/WorldMap.astro'
-
-const { name, label, image, location, profiles, phone, email } = basics
-const { city, region } = location
+const { name, label, image, location, profiles, phone, email } = basics;
+const { city, region } = location;
 
 const SOCIAL_ICONS: Record<string, any> = {
     GitHub,
-    LinkedIn
-}
+    LinkedIn,
+};
 
+const linkedinUser = profiles.find(({ network }) => network === "LinkedIn");
+const linkedinUrl = linkedinUser?.url;
+
+const printInfo = [email, phone, linkedinUrl].filter(Boolean).join(" • ");
 ---
 
 <Section>
@@ -27,51 +30,54 @@ const SOCIAL_ICONS: Record<string, any> = {
                 <WorldMap />
                 {city}, {region}
             </span>
-            <footer>
-            {
-                email && (
-                    <a 
-                        href={`mailto:${email}`}
-                        title={`Send email to ${name}: ${email}`}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        <Mail />
-                    </a>
-                )
-            }
-            {
-                phone && (
-                    <a 
-                        href={`tel:${phone}`}
-                        title={`Call ${name}: ${phone}`}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        <Phone />
-                    </a>
-                )
-            }
-            {
-                profiles.map(({ network, url, username }) => {
-                    const Icon = SOCIAL_ICONS[network]
-
-                    return (
-                        <a 
-                            href={url}
-                            title={`Visit ${username} profile in ${network}`}
+            <footer class="print">
+                {printInfo}
+            </footer>
+            <footer class="no-print">
+                {
+                    email && (
+                        <a
+                            href={`mailto:${email}`}
+                            title={`Send email to ${name}: ${email}`}
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            <Icon />
+                            <Mail />
                         </a>
                     )
-                })
-            }
-        </footer>
+                }
+                {
+                    phone && (
+                        <a
+                            href={`tel:${phone}`}
+                            title={`Call ${name}: ${phone}`}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <Phone />
+                        </a>
+                    )
+                }
+                {
+                    profiles.map(({ network, url, username }) => {
+                        const Icon = SOCIAL_ICONS[network];
+
+                        return (
+                            <a
+                                href={url}
+                                title={`Visit ${username} profile in ${network}`}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <Icon />
+                            </a>
+                        );
+                    })
+                }
+            </footer>
         </div>
         <figure>
-            <img src={image} alt="{name}">
+            <img src={image} alt="{name}" />
         </figure>
     </div>
 </Section>
@@ -120,6 +126,8 @@ const SOCIAL_ICONS: Record<string, any> = {
     }
 
     footer {
+        color: #555;
+        font-size: 0.55rem;
         display: flex;
         gap: 4px;
         margin-top: 8px;
@@ -135,7 +143,7 @@ const SOCIAL_ICONS: Record<string, any> = {
         height: 32px;
         width: 32px;
         border-radius: 6px;
-        transition: all .3s ease;
+        transition: all 0.3s ease;
     }
 
     footer a:hover {

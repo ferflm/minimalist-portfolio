@@ -1,0 +1,173 @@
+{
+  "basics": {
+    "name": "Fernando Flores",
+    "label": "Computer Engineering Graduate",
+    "image": "./public/IMG_0982.JPG",
+    "email": "ferflmtzzz@gmail.com",
+    "phone": "+52 55 1199 5503",
+    "url": "",
+    "summary": "Computer Engineering graduate focused on cloud computing and data engineering, with hands-on experience in Linux environments and software development using Python and Java. Strong interest in data processing and modern cloud-based architectures.",
+    "location": {
+      "address": "",
+      "postalCode": "",
+      "city": "Mexico City",
+      "countryCode": "MX",
+      "region": "Mexico"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "fernando-flores10",
+        "url": "https://linkedin.com/in/fernando-flores10"
+      },
+      {
+        "network": "GitHub",
+        "username": "ferflm",
+        "url": "https://github.com/ferflm"
+      }
+    ]
+  },
+
+  "work": [
+    {
+      "name": "PricewaterhouseCoopers (PwC)",
+      "position": "Intern",
+      "url": "https://www.pwc.com",
+      "startDate": "2025-08",
+      "endDate": "",
+      "summary": "Internship focused on cloud-based enterprise systems and data analysis within Oracle Cloud environments.",
+      "highlights": [
+        "Worked with Oracle Cloud technologies including Fusion Cloud, Oracle Integration Cloud (OIC), and Oracle Cloud Infrastructure (OCI)",
+        "Built reports using OTBI and BI Publisher (BIP) with SQL queries to analyze business data and support decision-making"
+      ]
+    },
+    {
+      "name": "FES Aragón - PC Puma / Computer Center",
+      "position": "Technical Support (Social Service)",
+      "url": "",
+      "startDate": "2025-02",
+      "endDate": "2025-08",
+      "summary": "Provided technical support for academic computer labs and assisted students and faculty with software, hardware, and programming-related issues.",
+      "highlights": [
+        "Diagnosed and resolved software and hardware technical issues",
+        "Assisted students and professors with programming-related topics",
+        "Automated update processes in computer labs, improving efficiency"
+      ]
+    }
+  ],
+
+  "volunteer": [],
+
+  "education": [
+    {
+      "institution": "Facultad de Estudios Superiores Aragón - UNAM",
+      "url": "https://www.aragon.unam.mx",
+      "area": "Computer Engineering",
+      "studyType": "Bachelor",
+      "startDate": "2021-08",
+      "endDate": "2025-12",
+      "score": "",
+      "courses": [
+        "Programming",
+        "Data Structures",
+        "Algorithms",
+        "Databases",
+        "Computer Systems",
+        "Microcontrollers and Microprocessors"
+      ]
+    }
+  ],
+
+  "awards": [],
+
+  "certificates": [],
+
+  "publications": [],
+
+  "skills": [
+    {
+      "name": "Programming & Data",
+      "level": "Intermediate",
+      "keywords": [
+        "Python",
+        "Java",
+        "SQL",
+        "PL/SQL",
+        "Flask",
+        "Pandas",
+        "NumPy",
+        "Matplotlib",
+        "Seaborn"
+      ]
+    },
+    {
+      "name": "Cloud & Networking",
+      "level": "Foundational",
+      "keywords": [
+        "Cloud Computing",
+        "Oracle Cloud Infrastructure (OCI)",
+        "Oracle Fusion Cloud",
+        "Oracle Integration Cloud (OIC)",
+        "Networking Fundamentals",
+        "IP Addressing",
+        "Client-Server Architecture"
+      ]
+    },
+    {
+      "name": "Tools & Platforms",
+      "level": "Intermediate",
+      "keywords": [
+        "Git",
+        "Postman",
+        "Linux",
+        "Manjaro",
+        "Ubuntu",
+        "Kali Linux",
+        "Arch Linux"
+      ]
+    }
+  ],
+
+  "languages": [
+    {
+      "language": "Spanish",
+      "fluency": "Native speaker"
+    },
+    {
+      "language": "English",
+      "fluency": "B2"
+    }
+  ],
+
+  "interests": [],
+
+  "references": [],
+
+  "projects": [
+    {
+      "name": "Schedule Generator",
+      "startDate": "2025-01",
+      "endDate": "2025-01",
+      "description": "Web application that generates multiple class schedule options based on user-defined preferences.",
+      "highlights": [
+        "Developed using Python, Flask, and SQLite",
+        "Deployed on Render (PaaS)",
+        "Implemented a backtracking algorithm to generate all possible schedule combinations",
+        "Designed REST endpoints and dynamic views for real-time interaction"
+      ],
+      "url": "https://schedule-generator-4vkp.onrender.com"
+    },
+    {
+      "name": "480 App",
+      "startDate": "2025-03",
+      "endDate": "2025-05",
+      "description": "Android mobile application that helps university students track and manage their complementary academic hours.",
+      "highlights": [
+        "Developed using Flutter for Android",
+        "Implemented dynamic charts and progress visualization",
+        "Designed user-friendly forms for activity registration and tracking"
+      ],
+      "url": ""
+    }
+  ]
+}

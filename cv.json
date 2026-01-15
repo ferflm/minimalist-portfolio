@@ -86,45 +86,63 @@
 
   "skills": [
     {
-      "name": "Programming & Data",
+      "name": "Python",
       "level": "Intermediate",
       "keywords": [
-        "Python",
-        "Java",
-        "SQL",
-        "PL/SQL",
+        "Data",
+        "Backend Development",
         "Flask",
-        "Pandas",
-        "NumPy",
         "Matplotlib",
+        "Numpy",
+        "Pandas",
         "Seaborn"
       ]
     },
     {
-      "name": "Cloud & Networking",
+      "name": "Java",
       "level": "Foundational",
       "keywords": [
-        "Cloud Computing",
-        "Oracle Cloud Infrastructure (OCI)",
-        "Oracle Fusion Cloud",
-        "Oracle Integration Cloud (OIC)",
-        "Networking Fundamentals",
-        "IP Addressing",
-        "Client-Server Architecture"
+        "Object-Oriented Programming"
       ]
     },
     {
-      "name": "Tools & Platforms",
-      "level": "Intermediate",
+      "name": "Linux",
+      "level": "Foundational",
       "keywords": [
-        "Git",
-        "Postman",
-        "Linux",
+        "Kali",
         "Manjaro",
-        "Ubuntu",
-        "Kali Linux",
-        "Arch Linux"
+        "Arch",
+        "Ubuntu"
       ]
+    },
+    {
+        "name": "Git",
+        "level": "Foundational",
+        "keywords":[
+            "Version control",
+            "Github"
+        ]
+    },
+    {
+        "name": "AWS",
+        "level": "Foundational",
+        "keywords": [
+            "Cloud Computing",
+            "EC2",
+            "S3",
+            "IAM"
+        ]
+    },
+    {
+        "name": "SQL",
+        "level": "Intermediate",
+        "keywords": [
+            "MariaDB",
+            "MySQL",
+            "Queries",
+            "Joins",
+            "Subqueries"
+        ]
     }
   ],
 
@@ -155,6 +173,7 @@
         "Implemented a backtracking algorithm to generate all possible schedule combinations",
         "Designed REST endpoints and dynamic views for real-time interaction"
       ],
+      "github": "https://github.com/ferflm/Schedule-Generator.git",
       "url": "https://schedule-generator-4vkp.onrender.com"
     },
     {
@@ -167,7 +186,8 @@
         "Implemented dynamic charts and progress visualization",
         "Designed user-friendly forms for activity registration and tracking"
       ],
-      "url": ""
+      "github": "https://github.com/ferflm/horas_complementarias.git",
+      "url": "https://github.com/ferflm/horas_complementarias.git"
     }
   ]
 }
